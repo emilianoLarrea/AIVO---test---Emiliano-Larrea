@@ -14,3 +14,4 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->get('/api/v1/artist', 'MusicController@getArtist');
