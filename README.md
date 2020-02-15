@@ -1,6 +1,8 @@
 # Aivo Test - Emiliano Larrea
 
 Este es un proyecto propuesto por AIVO a modo de Test, en el proceso de selección para el puesto Backend Developer. 
+El desarrollo esta estructurado por dominios (DDD) e implementado de una forma "agnóstica" al framework. De esta manera el código es independiente al mismo, así es posible adaptar haciendo la menor cantidad de cambios posibles a otro framework o microframework.
+El repositorio esta dividido en dos secciones, una contiene una api desarrollada con el microframework Lumen 6 y otra, una api desarrollada en el framework cakephp 3. 
 
 ## Consignas:
 
@@ -21,10 +23,6 @@ Este es un proyecto propuesto por AIVO a modo de Test, en el proceso de selecci�
 - Se puede usar un microframework (preferentemente Slim 3) 
 - Se pueden usar libs (como guzzle) 
 - No se puede usar ningun SDK de spotify.
-
-El proyecto esta estructurado por dominios (DDD) e implementado de una forma "agnóstica" al framework. De esta manera el código es independiente al mismo, así es posible adaptar haciendo la menor cantidad de cambios posibles a otro framework o microframework.
-El proyecto esta dividido en dos secciones, una contiene una api desarrollada con el microframework Lumen 6 y otra, una api desarrollada en el framework cakephp 3. 
-
 
 ## [aivo_test_lumen]: Puesta a Punto y Ejecución: 
 
