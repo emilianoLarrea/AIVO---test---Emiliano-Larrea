@@ -33,7 +33,7 @@ El proyecto esta dividido en dos secciones, una contiene una api desarrollada co
 - composer install
 - sudo php -S localhost:80 -t public
 - Documentación sobre la api disponible en: http://localhost
-- Se encuentra disponible el archivo: [Ejemplos de uso para Postman](aivo_test_lumen.postman_collection.json)
+- Se encuentra disponible el archivo: [Ejemplos de uso para Postman](AIVO_TEST_LUMEN.postman_collection.json)
 
 
 ## [aivo_test_cakephp]: Puesta a Punto y Ejecución: 
@@ -42,7 +42,7 @@ El proyecto esta dividido en dos secciones, una contiene una api desarrollada co
 - composer install
 - bin/cake server -p 8080
 - Documentación sobre la api disponible en: http://localhost:8080
-- Se encuentra disponible el archivo: [Ejemplos de uso para Postman](aivo_test_cakephp.postman_collection.json)
+- Se encuentra disponible el archivo: [Ejemplos de uso para Postman](AIVO_TEST_CAKEPHP.postman_collection.json)
 
 
 ## Entorno de Desarrollo:

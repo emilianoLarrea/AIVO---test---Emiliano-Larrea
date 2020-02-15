@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "dd19b084-ac26-4b38-86b8-d3f82ec67180",
-		"name": "aivo_test",
+		"_postman_id": "51434b11-37e1-4124-855f-f701b50f80bf",
+		"name": "AIVO TEST CAKEPHP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -61,27 +61,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "home",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/api/v1/artist",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"artist"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -108,7 +87,7 @@
 	],
 	"variable": [
 		{
-			"id": "d1020b0f-5626-4151-b6a7-1b79f3d7da5b",
+			"id": "5285db3c-03cd-46ef-a406-01b617fecb51",
 			"key": "url",
 			"value": "http://localhost:8080",
 			"type": "string"

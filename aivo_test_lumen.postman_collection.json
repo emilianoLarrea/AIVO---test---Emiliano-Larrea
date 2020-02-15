@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "dd19b084-ac26-4b38-86b8-d3f82ec67180",
-		"name": "aivo_test",
+		"name": "AIVO TEST LUMEN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -61,27 +61,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "home",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/api/v1/artist",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"artist"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -108,9 +87,9 @@
 	],
 	"variable": [
 		{
-			"id": "fcc32205-dbc4-4801-b531-580dd33dfefa",
+			"id": "4f02d07c-d2fd-4550-8da3-03bf7fbd75a0",
 			"key": "url",
-			"value": "http://localhost:80",
+			"value": "http://localhost",
 			"type": "string"
 		}
 	],
