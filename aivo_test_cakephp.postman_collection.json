@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "dd19b084-ac26-4b38-86b8-d3f82ec67180",
+		"name": "aivo_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAlbums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/albums?q=the beatles",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"albums"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "the beatles"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getArtist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer BQDFYwtrFKPNuRxpSJB3GRFHvwp51x7oKARVlXWP7TiJfmTGgGcuafE_RNKwqR5emR1ei-y_ajPrcu3VopFbqcyNDAZSAeHwnmSEVYebG13sRewpW1ykcd0mCAhBxmBd1hpQis-u-IhwocxJTjV04c8EeQQ87ZeM1Cg_-w",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/v1/artist?q=hola",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"artist"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hola"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/artist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"artist"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "611e2f92-efc6-4f95-a7bb-39135f91893d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0400823b-639a-4f89-839c-c0d34a78e0da",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d1020b0f-5626-4151-b6a7-1b79f3d7da5b",
+			"key": "url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
