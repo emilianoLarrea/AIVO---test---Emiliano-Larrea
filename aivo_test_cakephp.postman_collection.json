@@ -1,97 +1,87 @@
 {
-	"info": {
-		"_postman_id": "51434b11-37e1-4124-855f-f701b50f80bf",
-		"name": "AIVO TEST CAKEPHP",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "getAlbums",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}/api/v1/albums?q=the beatles",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"v1",
-						"albums"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "the beatles"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "getArtist",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"type": "text",
-						"value": "Bearer BQDFYwtrFKPNuRxpSJB3GRFHvwp51x7oKARVlXWP7TiJfmTGgGcuafE_RNKwqR5emR1ei-y_ajPrcu3VopFbqcyNDAZSAeHwnmSEVYebG13sRewpW1ykcd0mCAhBxmBd1hpQis-u-IhwocxJTjV04c8EeQQ87ZeM1Cg_-w",
-						"disabled": true
-					}
-				],
-				"url": {
-					"raw": "{{url}}/api/v1/artist?q=hola",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"v1",
-						"artist"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "hola"
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"id": "611e2f92-efc6-4f95-a7bb-39135f91893d",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"id": "0400823b-639a-4f89-839c-c0d34a78e0da",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"id": "5285db3c-03cd-46ef-a406-01b617fecb51",
-			"key": "url",
-			"value": "http://localhost:8080",
-			"type": "string"
-		}
-	],
-	"protocolProfileBehavior": {}
+    "info": {
+        "_postman_id": "51434b11-37e1-4124-855f-f701b50f80bf",
+        "name": "AIVO TEST CAKEPHP",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "getAlbums",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{url}}/api/v1/albums?q=the beatles",
+                    "host": [
+                        "{{url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "albums"
+                    ],
+                    "query": [{
+                        "key": "q",
+                        "value": "the beatles"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "getArtist",
+            "request": {
+                "method": "GET",
+                "header": [{
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "Bearer BQDFYwtrFKPNuRxpSJB3GRFHvwp51x7oKARVlXWP7TiJfmTGgGcuafE_RNKwqR5emR1ei-y_ajPrcu3VopFbqcyNDAZSAeHwnmSEVYebG13sRewpW1ykcd0mCAhBxmBd1hpQis-u-IhwocxJTjV04c8EeQQ87ZeM1Cg_-w",
+                    "disabled": true
+                }],
+                "url": {
+                    "raw": "{{url}}/api/v1/artist?q=the lumineers",
+                    "host": [
+                        "{{url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "artist"
+                    ],
+                    "query": [{
+                        "key": "q",
+                        "value": "the lumineers"
+                    }]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [{
+            "listen": "prerequest",
+            "script": {
+                "id": "611e2f92-efc6-4f95-a7bb-39135f91893d",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "0400823b-639a-4f89-839c-c0d34a78e0da",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [{
+        "id": "5285db3c-03cd-46ef-a406-01b617fecb51",
+        "key": "url",
+        "value": "http://localhost:8080",
+        "type": "string"
+    }],
+    "protocolProfileBehavior": {}
 }
