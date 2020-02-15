@@ -1,7 +1,8 @@
 # Aivo Test - Emiliano Larrea
 
 Este es un proyecto propuesto por AIVO a modo de Test, en el proceso de selección para el puesto Backend Developer. 
-Las consignas son:
+
+## Consignas:
 
 - Utilizando la api de spotify crear un endpoint al que ingresando el nombre de la banda se obtenga un array de toda la discografia, cada disco debe tener este formato:
     [{
@@ -25,7 +26,8 @@ Se realizó el mismo utilizando diseño guiado por el dominio (DDD) e implementa
 El proyecto esta dividido en dos secciones, una contiene una api desarrollada con el microframework Lumen 6 y otra, una api desarrollada en el framework cakephp 3. 
 
 [aivo_test_lumen]:
-## puesta a punto y ejecución: 
+## Puesta a Punto y Ejecución: 
+
 - renombrar archivo "/aivo_test_lumen/.env.example" como "aivo_test_lumen/.env"
 - cd aivo_test_lumen
 - composer install
@@ -34,9 +36,15 @@ El proyecto esta dividido en dos secciones, una contiene una api desarrollada co
 - Se encuentra disponible el archivo: [Ejemplos de uso para Postman](aivo_test_lumen.postman_collection.json)
 
 [aivo_test_cakephp]:
-## puesta a punto y ejecución: 
+## Puesta a Punto y Ejecución: 
+
 - cd aivo_test_cakephp
 - composer install
 - bin/cake server -p 8080
 - Documentaciǿn sobre la api disponible en: http://localhost:8080
 - Se encuentra disponible el archivo: [Ejemplos de uso para Postman](aivo_test_cakephp.postman_collection.json)
+
+
+## Entorno de Desarrollo:
+
+El proyecto se desarrollo con [Visual Studio Code](https://code.visualstudio.com/download), en SO MacOS Catalina.
