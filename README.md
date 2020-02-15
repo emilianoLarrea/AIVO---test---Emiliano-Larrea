@@ -22,7 +22,7 @@ Este es un proyecto propuesto por AIVO a modo de Test, en el proceso de selecci�
 - Se pueden usar libs (como guzzle) 
 - No se puede usar ningun SDK de spotify.
 
-Se realizó el mismo utilizando diseño guiado por el dominio (DDD) e implementando de una forma "agnóstica" al framework. De esta manera el código es independiente al framework, de tal forma que se puede adaptar haciendo la menor cantidad de cambios posibles a otro framework o microframework.
+Se realizó el mismo utilizando diseño guiado por el dominio (DDD) e implementando de una forma "agnóstica" al framework. De esta manera el código es independiente al mismo, así es posible adaptar haciendo la menor cantidad de cambios posibles a otro framework o microframework.
 El proyecto esta dividido en dos secciones, una contiene una api desarrollada con el microframework Lumen 6 y otra, una api desarrollada en el framework cakephp 3. 
 
 [aivo_test_lumen]:
