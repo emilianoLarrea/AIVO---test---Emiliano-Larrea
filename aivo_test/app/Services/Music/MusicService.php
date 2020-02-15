@@ -36,7 +36,7 @@ class MusicService{
         
     }
 
-    public function getAlbums($artist = null, $token = null){
+    public static function getAlbums($artist = null, $token = null){
         $artist = json_decode($artist, true);
         if(isset($artist['error'])){
             return json_encode($artist);
@@ -49,7 +49,7 @@ class MusicService{
                 'Content-Type' => 'application/json',
             ];
             $response = Http::http_connection('GET', "https://api.spotify.com/v1/artists/".$artist['id']."/albums", $parameters, $headers);
-            $result = $response->getJson();
+            $result = $response['body'];
             if($result['total'] == 0){
                 $albums = ['error' => "Albums not found"];
             }else{

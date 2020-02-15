@@ -2,7 +2,7 @@
 namespace App\Utility\Auth;
 use Illuminate\Http\Response;
 use App\Utility\Http\Http;
-
+use Log;
 class Auth{
     
     public static function isValidToken($accessToken = null){
@@ -36,7 +36,9 @@ class Auth{
             config(['auth_token' => $response['body']["access_token"]]);
             return $response['body']["access_token"];
         }else{
-            return $response;
+            Log::error('error: ' . $response['body']['error_description']);
+            header("HTTP/1.1 ".$response['status'] . " " .$response['body']['error']);
+            exit;
         }
     }
     

@@ -13,15 +13,18 @@ class MusicController extends Controller
         require_once('../app/Services/Music/MusicService.php');
         $data = Data::validateQuery($request);
         $token_response = Auth::getToken();
-        if(is_array($token_response)){
-            //echo json_encode($token_response);die;
-            return (new Response($token_response['body']['error'], $token_response['status']));
-        }else{
-            $content = \MusicService::getArtist($data, $token_response);
-            return (new Response($content, 200));
-        }
+        $content = \MusicService::getArtist($data, $token_response);
+        return (new Response($content, 200));
+    }
+
+    public function getAlbums(Request $request)
+    {
+        require_once('../app/Services/Music/MusicService.php');
+        $data = Data::validateQuery($request);
+        $token_response = Auth::getToken();
+        $artist = \MusicService::getArtist($data, $token_response);
+        $content = \MusicService::getAlbums($artist, $token_response);
+        return (new Response($content, 200));
     }
    
 }
-
-//aivo_test/app/Services/Music/services.php
