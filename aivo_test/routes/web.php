@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return view('doc');
+    return view('api-doc/doc');
 });
 
 /**
